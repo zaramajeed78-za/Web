@@ -1,0 +1,42 @@
+header h1{
+    color :darkred
+}
+section h1{
+     color :red
+}
+table {
+  border-collapse: collapse;
+  width: 40%;
+            
+}
+
+th, td {
+  border: 1px solid #333;     
+  padding: 10px 20px;        
+  text-align: left;
+}
+
+th {
+  padding: 12px 20px;        
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: #16213e;
+}
+
+nav a {
+    color: white;
+}
+
+#themeToggle {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: #16213e;
+  color: white;
+  font-size: 14px;
+}
