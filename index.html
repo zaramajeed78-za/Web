@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>My Top 3 Favourite Movies</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+    <body>
+           <header>
+        <h1>🎬 My Top 3 Favourite Movies</h1>
+        <p>Movies that changed how I see cinema</p>
+          <p id="statusBanner"></p>
+         </header>
+             <button id="themeToggle">Toggle Light/Dark Mode</button>
+                <nav>
+            <a href="#about">Home</a>
+            <a href="#actors">Actors</a>
+             <a href="#movies">Movies</a>
+              <a href="#compare">Compare</a>
+               <a href="#suggestions">Suggestions</a>
+        </nav>
+     
+        <main>
+           <section id="about">
+  <h1>About My Movie Journey 🎬</h1>
+
+  <article>
+    <p>
+      Movies have always been my escape. Whether it's a mind-bending sci-fi thriller
+      or a heartwarming drama, the right film can change your entire day.
+    </p>
+
+    <p id="extraText" style="display: none;">
+      Over the years, I've watched hundreds of movies, but a few stand out as absolute
+      masterpieces. Inception made me rethink what a story could do. The Dark Knight
+      showed me how superhero films could carry real emotional weight. Oppenheimer
+      proved that history, when told right, can feel like a thriller. Each of these
+      films shaped how I see cinema today — and this page is my small tribute to them.
+    </p>
+
+    <button id="readMoreBtn">Read More</button>
+  </article>
+</section>
+    <section id="movies">
+            <h1>Movie Cards</h1>
+            <h2>Movie 1:Inception</h2><br>
+            <img
+                 src="D:\image1.jpeg"
+                 alt="movie poster">
+                 <p>Quick Review: "Mind-blowing sci-fi with a brilliant ending."<br>Rating: ⭐⭐⭐⭐⭐<br>
+                    <a href="https://www.netflix.com/pk/">Visit Netflix</a>
+                </p>
+                <h2>Movie 2:The Dark Knight</h2><br>
+            <img
+                 src="D:\image2.jpeg"
+                 alt="movie poster">
+                 <p>Quick Review: "The best Batman movie ever made."<br>Rating: ⭐⭐⭐⭐⭐<br>
+                    <a href="https://www.hbomax.com/">Visit HBOMAX</a>
+                </p>
+                 <h2>Movie 3:Oppenheimer</h2><br>
+            <img
+                 src="D:\image3.jpeg"
+                 alt="movie poster">
+                 <p>Quick Review: "A haunting, masterfully crafted biopic that hits like a nuclear blast."<br>Rating: ⭐⭐⭐⭐<br>
+                    <a href="https://www.netflix.com/pk/">Visit Netflix</a>
+                </p>
+                </section>
+                <section id="actors">
+                <h1>Favourite Actors</h1>
+                <ol type="A">
+                    <li>Leonardo DiCaprio</li>
+                    <li>Christian Bale</li>
+                    <li>Tom Hanks</li>
+                    <li>Cilian Murphy</li>
+                </ol>
+                
+                </section>
+                <section id="compare">
+                   <table id="movieTable">
+                   <caption><strong><em><h1>Extra Information</h1></em></strong></caption> 
+                   <tr>
+                    <th><b>Movie</b></th>
+                    <th><b>Year</b></th>
+                    <th><b>Genre</b></th>
+                   </tr>
+                   <tr>
+                    <td>Inception</td>
+                    <td>2010</td>
+                    <td>Sci-Fi</td>
+                   </tr>
+                    <tr>
+                    <td>The Dark Knight</td>
+                    <td>2008</td>
+                    <td>Action</td>
+                   </tr>
+                    <tr>
+                    <td>oppenheimer</td>
+                    <td>2025</td>
+                    <td>Epic Thriller</td>
+                   </tr>
+                </table>
+                </section>
+      <section id="suggestions">
+  <h1>Form</h1>
+  <form id="feedbackForm">
+    <label for="username">Your Name:</label>
+    <input type="text" id="username" name="username"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br>
+
+     <label for="birth-year">Birth Year :</label>
+  <input type="text" id="birth-year"><br>
+
+    <label for="suggestMovie">Suggest a Movie:</label>
+    <input type="text" id="suggestMovie" name="suggestMovie"><br>
+
+      <label for="special-notes">Special Request (max 100 chars):</label><br>
+  <textarea id="special-notes" maxlength="100" rows="3" cols="40"></textarea>
+  <p id="charCount">100 characters remaining</p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+
+  <p id="formMessage"></p>
+ <section id="ticketOrder">
+  <h1>Buy Movie Tickets </h1>
+
+  
+  <div id="filterButtons">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
+    <button class="filter-btn" data-filter="action">Action</button>
+    <button class="filter-btn" data-filter="thriller">Thriller</button>
+  </div>
+
+  
+  <div class="ticket-list">
+    <label class="ticket-row" data-category="sci-fi">
+      <input type="checkbox" class="ticket-checkbox" value="12" data-name="Inception Ticket">
+      Inception Ticket – $12
+    </label><br>
+
+    <label class="ticket-row" data-category="action">
+      <input type="checkbox" class="ticket-checkbox" value="15" data-name="Dark Knight Ticket">
+      The Dark Knight Ticket – $15
+    </label><br>
+
+    <label class="ticket-row" data-category="thriller">
+      <input type="checkbox" class="ticket-checkbox" value="10" data-name="Oppenheimer Ticket">
+      Oppenheimer Ticket – $10
+    </label><br>
+  </div>
+
+  <p id="total">Total: $0</p>
+</section>
+</section>
+              
+              <h1>List Genres</h1>
+             <input type="checkbox" unchecked> Action<br>
+             <input type="checkbox" unchecked> Comedy<br>
+             <input type="checkbox" unchecked> Sci-Fi<br>
+             <input type="checkbox" unchecked> Thriller<br>
+             <h1>Which movie is best? </h1>
+             <input type="radio" name="best_movie" value="Inception">Inception<br>
+              <input type="radio" name="best_movie" value="the Dark Knight">the Dark Knight<br>
+              <input type="radio" name="best_movie" value="oppenheimer">oppenheimer<br>
+            </section>
+                </main>
+                <footer>
+                    <p>&copy;2026 My movies.All rights reserved.</p>
+                </footer> 
+                 <script src="script.js"></script>
+                </body>
+    </html>
+            </html>
